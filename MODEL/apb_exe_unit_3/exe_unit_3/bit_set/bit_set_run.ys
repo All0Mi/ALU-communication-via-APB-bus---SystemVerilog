@@ -1,0 +1,11 @@
+read_verilog -sv ./bit_set.sv
+copy bit_set bit_set_synth
+
+hierarchy -top bit_set_synth
+
+synth
+    abc -g AND, OR, XOR
+    opt_clean
+
+write_verilog -noattr ./SYNTH/bit_set_synth.sv
+stat -tech cmos

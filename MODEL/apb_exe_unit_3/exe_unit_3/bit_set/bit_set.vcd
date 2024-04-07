@@ -1,0 +1,41 @@
+$date
+	Fri Nov 24 23:25:59 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module bit_set_tb $end
+$var wire 8 ! o_y [7:0] $end
+$var wire 1 " ERROR $end
+$var reg 8 # i_argA [7:0] $end
+$var reg 8 $ i_argB [7:0] $end
+$scope module uut $end
+$var wire 8 % i_argA [7:0] $end
+$var wire 8 & i_argB [7:0] $end
+$var reg 1 " ERROR $end
+$var reg 8 ' o_y [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111 '
+b11111110 &
+b111 %
+b11111110 $
+b111 #
+1"
+b111 !
+$end
+#10
+0"
+b0 $
+b0 &
+#20
+1"
+b1011 $
+b1011 &
+#30

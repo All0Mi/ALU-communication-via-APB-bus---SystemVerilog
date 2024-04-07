@@ -1,0 +1,87 @@
+$date
+	Sun Dec 17 20:55:14 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module negation_tb $end
+$var wire 4 ! sn_o_result [3:0] $end
+$var wire 1 " sn_error $end
+$var wire 4 # s_o_result [3:0] $end
+$var wire 1 $ s_error $end
+$var reg 4 % s_i_argA [3:0] $end
+$scope module s_negation $end
+$var wire 4 & i_argA [3:0] $end
+$var reg 1 $ error $end
+$var reg 4 ' o_result [3:0] $end
+$upscope $end
+$scope module sn_negation $end
+$var wire 1 ( _0_ $end
+$var wire 1 ) _1_ $end
+$var wire 1 * _2_ $end
+$var wire 1 " error $end
+$var wire 4 + i_argA [3:0] $end
+$var wire 4 , o_result [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1111 ,
+b1 +
+0*
+1)
+1(
+b1111 '
+b1 &
+b1 %
+0$
+b1111 #
+0"
+b1111 !
+$end
+#4
+1"
+1*
+0)
+0(
+b1000 #
+b1000 '
+1$
+b1000 !
+b1000 ,
+b1000 %
+b1000 &
+b1000 +
+#8
+0"
+0*
+1)
+1(
+b111 #
+b111 '
+0$
+b111 !
+b111 ,
+b1001 %
+b1001 &
+b1001 +
+#12
+b11 !
+b11 ,
+b11 #
+b11 '
+b1101 %
+b1101 &
+b1101 +
+#16
+b1 !
+b1 ,
+b1 #
+b1 '
+b1111 %
+b1111 &
+b1111 +

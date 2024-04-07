@@ -1,0 +1,110 @@
+$date
+	Sun Dec 17 20:51:55 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module changecode_tb $end
+$var wire 4 ! sn_o_result [3:0] $end
+$var wire 1 " sn_error $end
+$var wire 4 # s_o_result [3:0] $end
+$var wire 1 $ s_error $end
+$var reg 4 % s_i_argA [3:0] $end
+$scope module s_changecode $end
+$var wire 4 & i_argA [3:0] $end
+$var reg 1 $ error $end
+$var reg 4 ' o_result [3:0] $end
+$upscope $end
+$scope module sn_changecode $end
+$var wire 1 ( _00_ $end
+$var wire 1 ) _01_ $end
+$var wire 1 * _02_ $end
+$var wire 1 + _03_ $end
+$var wire 1 , _04_ $end
+$var wire 1 - _05_ $end
+$var wire 1 . _06_ $end
+$var wire 1 / _07_ $end
+$var wire 1 0 _08_ $end
+$var wire 1 1 _09_ $end
+$var wire 1 " error $end
+$var wire 4 2 i_argA [3:0] $end
+$var wire 4 3 o_result [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 3
+b1 2
+01
+00
+0/
+0.
+0-
+1,
+1+
+0*
+1)
+1(
+b1 '
+b1 &
+b1 %
+0$
+b1 #
+0"
+b1 !
+$end
+#4
+1"
+1-
+0/
+0)
+0,
+0.
+11
+b1000 !
+b1000 3
+b1000 #
+b1000 '
+1$
+b1000 %
+b1000 &
+b1000 2
+#8
+0"
+1/
+0-
+1.
+1,
+b1111 !
+b1111 3
+b1111 #
+b1111 '
+0$
+b1001 %
+b1001 &
+b1001 2
+#12
+01
+0(
+b1011 !
+b1011 3
+b1011 #
+b1011 '
+b1101 %
+b1101 &
+b1101 2
+#16
+b1001 !
+b1001 3
+0/
+0+
+1*
+b1001 #
+b1001 '
+b1111 %
+b1111 &
+b1111 2

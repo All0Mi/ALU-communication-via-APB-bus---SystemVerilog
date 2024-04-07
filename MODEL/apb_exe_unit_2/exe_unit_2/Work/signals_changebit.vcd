@@ -1,0 +1,128 @@
+$date
+	Sun Dec 17 20:46:24 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module changebit_tb $end
+$var wire 4 ! sn_o_result [3:0] $end
+$var wire 1 " sn_error $end
+$var wire 4 # s_o_result [3:0] $end
+$var wire 1 $ s_error $end
+$var reg 4 % s_i_argA [3:0] $end
+$var reg 4 & s_i_argB [3:0] $end
+$scope module s_changebit $end
+$var wire 4 ' i_argA [3:0] $end
+$var wire 4 ( i_argB [3:0] $end
+$var reg 1 $ error $end
+$var reg 4 ) o_result [3:0] $end
+$upscope $end
+$scope module sn_changebit $end
+$var wire 1 * _00_ $end
+$var wire 1 + _01_ $end
+$var wire 1 , _02_ $end
+$var wire 1 - _03_ $end
+$var wire 1 . _04_ $end
+$var wire 1 / _05_ $end
+$var wire 1 0 _06_ $end
+$var wire 1 1 _07_ $end
+$var wire 1 2 _08_ $end
+$var wire 1 3 _09_ $end
+$var wire 1 4 _10_ $end
+$var wire 1 5 _11_ $end
+$var wire 1 6 _12_ $end
+$var wire 1 " error $end
+$var wire 4 7 i_argA [3:0] $end
+$var wire 4 8 i_argB [3:0] $end
+$var wire 4 9 o_result [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101 9
+b10 8
+b1 7
+06
+15
+14
+03
+02
+01
+10
+0/
+1.
+1-
+0,
+1+
+1*
+b101 )
+b10 (
+b1 '
+b10 &
+b1 %
+0$
+b101 #
+0"
+b101 !
+$end
+#4
+13
+0-
+1/
+05
+1,
+0.
+12
+04
+b1010 !
+b1010 9
+b1010 #
+b1010 )
+b1 &
+b1 (
+b1 8
+b1000 %
+b1000 '
+b1000 7
+#8
+1-
+0/
+03
+0+
+1"
+0,
+1.
+02
+b101 !
+b101 9
+b101 #
+b101 )
+1$
+b100 &
+b100 (
+b100 8
+b101 %
+b101 '
+b101 7
+#12
+11
+1/
+00
+1+
+0"
+0.
+b1111 !
+b1111 9
+b1111 #
+b1111 )
+0$
+b0 &
+b0 (
+b0 8
+b1111 %
+b1111 '
+b1111 7

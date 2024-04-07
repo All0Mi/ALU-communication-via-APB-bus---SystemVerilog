@@ -1,0 +1,145 @@
+$date
+	Sun Dec 17 20:57:54 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module comparison_tb $end
+$var wire 4 ! sn_o_result [3:0] $end
+$var wire 4 " s_o_result [3:0] $end
+$var reg 4 # s_i_argA [3:0] $end
+$var reg 4 $ s_i_argB [3:0] $end
+$scope module s_comparison $end
+$var wire 4 % i_argA [3:0] $end
+$var wire 4 & i_argB [3:0] $end
+$var reg 4 ' o_result [3:0] $end
+$upscope $end
+$scope module sn_comparison $end
+$var wire 1 ( _00_ $end
+$var wire 1 ) _01_ $end
+$var wire 1 * _02_ $end
+$var wire 1 + _03_ $end
+$var wire 1 , _04_ $end
+$var wire 1 - _05_ $end
+$var wire 1 . _06_ $end
+$var wire 1 / _07_ $end
+$var wire 1 0 _08_ $end
+$var wire 1 1 _09_ $end
+$var wire 1 2 _10_ $end
+$var wire 1 3 _11_ $end
+$var wire 1 4 _12_ $end
+$var wire 1 5 _13_ $end
+$var wire 1 6 _14_ $end
+$var wire 1 7 _15_ $end
+$var wire 4 8 i_argA [3:0] $end
+$var wire 4 9 i_argB [3:0] $end
+$var wire 4 : o_result [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 :
+b1 9
+b1 8
+17
+16
+15
+14
+13
+02
+01
+00
+1/
+1.
+1-
+0,
+0+
+1*
+1)
+1(
+b1 '
+b1 &
+b1 %
+b1 $
+b1 #
+b1 "
+b1 !
+$end
+#4
+b0 !
+b0 :
+07
+06
+03
+04
+0/
+0(
+0.
+b0 "
+b0 '
+b1000 #
+b1000 %
+b1000 8
+#8
+b1 !
+b1 :
+17
+16
+13
+0-
+14
+0/
+12
+0*
+1(
+1.
+10
+b1 "
+b1 '
+b11 $
+b11 &
+b11 9
+b101 #
+b101 %
+b101 8
+#12
+b0 !
+b0 :
+07
+06
+11
+04
+1/
+1*
+0(
+1-
+b0 "
+b0 '
+b1 $
+b1 &
+b1 9
+b1111 #
+b1111 %
+b1111 8
+#16
+03
+0/
+05
+0-
+14
+02
+0)
+0*
+1(
+00
+01
+b111 $
+b111 &
+b111 9
+b1 #
+b1 %
+b1 8

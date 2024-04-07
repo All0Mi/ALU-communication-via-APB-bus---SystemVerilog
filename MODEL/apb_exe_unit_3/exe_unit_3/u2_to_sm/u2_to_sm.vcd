@@ -1,0 +1,40 @@
+$date
+	Sun Dec 10 20:25:29 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module u2_to_sm_tb $end
+$var wire 8 ! sm [7:0] $end
+$var wire 1 " ERROR $end
+$var reg 8 # u2 [7:0] $end
+$scope module uut $end
+$var wire 8 $ u2 [7:0] $end
+$var reg 1 " ERROR $end
+$var reg 8 % sm [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11111000 %
+b10001000 $
+b10001000 #
+0"
+b11111000 !
+$end
+#10
+b1111000 !
+b1111000 %
+b1111000 #
+b1111000 $
+#20
+1"
+b0 !
+b0 %
+b10000000 #
+b10000000 $
+#30

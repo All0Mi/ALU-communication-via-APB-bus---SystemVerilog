@@ -1,0 +1,23 @@
+# Wczytanie pliku modelu
+read_verilog -sv changebit.sv
+
+# Utworzenie kopi modulu z inna nazwa
+copy changebit changebit_rtl
+
+# Ustawienie hierarchii projektu na nowy modul
+hierarchy -top changebit_rtl
+
+# Synteza logiczna
+synth
+
+# Mapowanie na bramki
+abc -g AND,OR,XOR
+
+# Optymalizacja po mapowaniu
+opt_clean
+
+# Zapis wyniku symulacji
+write_verilog -noattr changebit_rtl.sv
+
+# Wypisanie statystyki uzytych bramek
+stat -tech cmos

@@ -1,0 +1,11 @@
+read_verilog -sv ./exe_unit_w38.sv
+copy exe_unit_w38 exe_unit_w38_synth
+
+hierarchy -top exe_unit_w38_synth
+
+synth
+abc -g AND, OR, XOR
+    opt_clean
+
+write_verilog -noattr ./SYNTH/exe_unit_w38_synth.sv
+stat -tech cmos
