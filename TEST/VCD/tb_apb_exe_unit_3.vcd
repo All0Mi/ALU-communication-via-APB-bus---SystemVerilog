@@ -1,0 +1,590 @@
+$date
+	Tue Jan 23 15:31:17 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 4 ! o_PSLVERR [3:0] $end
+$var wire 1 " o_PREADY $end
+$var wire 8 # o_PRDATA [7:0] $end
+$var parameter 32 $ ADDR_WIDTH $end
+$var parameter 32 % DATA_WIDTH $end
+$var parameter 32 & SEL_WIDTH $end
+$var reg 2 ' i_PADDR [1:0] $end
+$var reg 1 ( i_PCLK $end
+$var reg 1 ) i_PENABLE $end
+$var reg 1 * i_PRESETn $end
+$var reg 3 + i_PSEL [2:0] $end
+$var reg 8 , i_PWDATA [7:0] $end
+$var reg 1 - i_PWRITE $end
+$scope module slave $end
+$var wire 2 . i_PADDR [1:0] $end
+$var wire 1 ( i_PCLK $end
+$var wire 1 ) i_PENABLE $end
+$var wire 1 * i_PRESETn $end
+$var wire 3 / i_PSEL [2:0] $end
+$var wire 8 0 i_PWDATA [7:0] $end
+$var wire 1 - i_PWRITE $end
+$var wire 4 1 s_result [3:0] $end
+$var wire 4 2 s_pslverr [3:0] $end
+$var parameter 32 3 ADDR_WIDTH $end
+$var parameter 32 4 DATA_WIDTH $end
+$var parameter 32 5 SEL_BIT $end
+$var parameter 32 6 SEL_WIDTH $end
+$var reg 8 7 o_PRDATA [7:0] $end
+$var reg 1 " o_PREADY $end
+$var reg 4 8 o_PSLVERR [3:0] $end
+$var reg 2 9 s_PADDR [1:0] $end
+$var reg 8 : s_PWDATA [7:0] $end
+$scope module slave $end
+$var wire 4 ; i_argA [3:0] $end
+$var wire 4 < i_argB [3:0] $end
+$var wire 1 ( i_clk $end
+$var wire 2 = i_op [1:0] $end
+$var wire 1 > i_reset $end
+$var wire 4 ? s_out_shift [3:0] $end
+$var wire 4 @ s_out_set [3:0] $end
+$var wire 4 A s_out_comparator [3:0] $end
+$var wire 4 B s_out_changer [3:0] $end
+$var wire 4 C s_oper_mux [3:0] $end
+$var wire 1 D s_ERROR_shift $end
+$var wire 1 E s_ERROR_set $end
+$var wire 1 F s_ERROR_change $end
+$var wire 4 G o_stat [3:0] $end
+$var wire 4 H o_result [3:0] $end
+$var parameter 32 I M $end
+$var parameter 32 J N $end
+$var reg 4 K possible_errors [3:0] $end
+$var integer 32 L counter [31:0] $end
+$var integer 32 M i [31:0] $end
+$scope module MUX $end
+$var wire 2 N testcase [1:0] $end
+$var wire 4 O SHIFT [3:0] $end
+$var wire 4 P SET [3:0] $end
+$var wire 4 Q COMPARATOR [3:0] $end
+$var wire 4 R CHANGER [3:0] $end
+$var parameter 32 S M $end
+$var parameter 32 T N $end
+$var reg 4 U modul [3:0] $end
+$upscope $end
+$scope module changer $end
+$var wire 4 V u2 [3:0] $end
+$var parameter 32 W M $end
+$var reg 1 F ERROR $end
+$var reg 4 X sm [3:0] $end
+$upscope $end
+$scope module comparator $end
+$var wire 4 Y i_argA [3:0] $end
+$var wire 4 Z i_argB [3:0] $end
+$var parameter 32 [ M $end
+$var reg 4 \ o_y [3:0] $end
+$upscope $end
+$scope module register $end
+$var wire 1 ( i_clk $end
+$var wire 4 ] i_in [3:0] $end
+$var wire 1 > i_reset $end
+$var parameter 32 ^ M $end
+$var reg 4 _ o_out [3:0] $end
+$upscope $end
+$scope module register_error $end
+$var wire 1 ( i_clk $end
+$var wire 4 ` i_in [3:0] $end
+$var wire 1 > i_reset $end
+$var parameter 32 a M $end
+$var reg 4 b o_out [3:0] $end
+$upscope $end
+$scope module setter $end
+$var wire 4 c i_argA [3:0] $end
+$var wire 4 d i_argB [3:0] $end
+$var parameter 32 e M $end
+$var reg 1 E ERROR $end
+$var reg 4 f o_y [3:0] $end
+$upscope $end
+$scope module shifter $end
+$var wire 4 g i_argA [3:0] $end
+$var wire 4 h i_argB [3:0] $end
+$var parameter 32 i M $end
+$var reg 1 D ERROR $end
+$var reg 4 j o_y [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 i
+b100 e
+b100 a
+b100 ^
+b100 [
+b100 W
+b10 T
+b100 S
+b10 J
+b100 I
+b11 6
+b11 5
+b1000 4
+b10 3
+b11 &
+b1000 %
+b10 $
+$end
+#0
+$dumpvars
+bx j
+bx h
+bx g
+bx f
+bx d
+bx c
+bx b
+bx1 `
+bx _
+bx ]
+bx \
+bx Z
+bx Y
+bx X
+bx V
+bx U
+bx R
+bx Q
+bx P
+bx O
+bx N
+b100 M
+b0 L
+bx1 K
+bx H
+bx G
+xF
+xE
+xD
+bx C
+bx B
+bx A
+bx @
+bx ?
+z>
+bx =
+bx <
+bx ;
+bx :
+bx 9
+b0 8
+b0 7
+bx 2
+bx 1
+b0 0
+b0 /
+b0 .
+1-
+b0 ,
+b0 +
+0*
+0)
+0(
+b0 '
+b0 #
+0"
+b0 !
+$end
+#1
+bx01 K
+bx01 `
+b100 M
+b0 1
+b0 H
+b0 _
+b0 2
+b0 G
+b0 b
+1(
+#2
+0(
+#3
+1(
+#4
+0(
+#5
+1(
+#6
+0(
+#7
+1(
+#8
+0(
+#9
+1(
+#10
+0(
+#11
+1(
+#12
+0(
+1*
+#13
+1(
+#14
+0(
+#15
+1(
+#16
+0(
+#17
+1(
+#18
+0(
+b11010 ,
+b11010 0
+b1 +
+b1 /
+b1 '
+b1 .
+#19
+1(
+#20
+0(
+1)
+#21
+1(
+#22
+0(
+#23
+1(
+#24
+0(
+#25
+1(
+#26
+0(
+#27
+1(
+#28
+0(
+b0 '
+b0 .
+b0 +
+b0 /
+b0 ,
+b0 0
+0)
+#29
+1(
+#30
+0(
+#31
+1(
+#32
+0(
+#33
+1(
+#34
+0(
+b1 +
+b1 /
+0-
+#35
+1(
+#36
+0(
+1)
+#37
+1(
+#38
+0(
+#39
+1(
+#40
+0(
+#41
+1(
+#42
+0(
+#43
+1(
+#44
+0(
+b0 +
+b0 /
+0)
+#45
+1(
+#46
+0(
+#47
+1(
+#48
+0(
+#49
+1(
+#50
+0(
+b101010 ,
+b101010 0
+b1 +
+b1 /
+1-
+#51
+1(
+#52
+0(
+1)
+#53
+1(
+#54
+0(
+#55
+1(
+#56
+0(
+#57
+1(
+#58
+0(
+#59
+1(
+#60
+0(
+b0 +
+b0 /
+b0 ,
+b0 0
+0)
+#61
+1(
+#62
+0(
+#63
+1(
+#64
+0(
+#65
+1(
+#66
+0(
+b1 +
+b1 /
+0-
+#67
+1(
+#68
+0(
+1)
+#69
+1(
+#70
+0(
+#71
+1(
+#72
+0(
+#73
+1(
+#74
+0(
+#75
+1(
+#76
+0(
+b0 +
+b0 /
+0)
+#77
+1(
+#78
+0(
+#79
+1(
+#80
+0(
+#81
+1(
+#82
+0(
+b1010 ,
+b1010 0
+b1 +
+b1 /
+b11 '
+b11 .
+1-
+#83
+1(
+#84
+0(
+1)
+#85
+1(
+#86
+0(
+#87
+1(
+#88
+0(
+#89
+1(
+#90
+0(
+#91
+1(
+#92
+0(
+b0 '
+b0 .
+b0 +
+b0 /
+b0 ,
+b0 0
+0)
+#93
+1(
+#94
+0(
+#95
+1(
+#96
+0(
+#97
+1(
+#98
+0(
+b1 +
+b1 /
+0-
+#99
+1(
+#100
+0(
+1)
+#101
+1(
+#102
+0(
+#103
+1(
+#104
+0(
+#105
+1(
+#106
+0(
+#107
+1(
+#108
+0(
+b0 +
+b0 /
+0)
+#109
+1(
+#110
+0(
+#111
+1(
+#112
+0(
+#113
+1(
+#114
+0(
+b110010 ,
+b110010 0
+b1 +
+b1 /
+b10 '
+b10 .
+1-
+#115
+1(
+#116
+0(
+1)
+#117
+1(
+#118
+0(
+#119
+1(
+#120
+0(
+#121
+1(
+#122
+0(
+#123
+1(
+#124
+0(
+b0 '
+b0 .
+b0 +
+b0 /
+b0 ,
+b0 0
+0)
+#125
+1(
+#126
+0(
+#127
+1(
+#128
+0(
+#129
+1(
+#130
+0(
+b1 +
+b1 /
+0-
+#131
+1(
+#132
+0(
+1)
+#133
+1(
+#134
+0(
+#135
+1(
+#136
+0(
+#137
+1(
+#138
+0(
+#139
+1(
+#140
+0(
+b0 +
+b0 /
+0)
+#141
+1(
+#142
+0(
+#143
+1(
+#144
+0(
+#145
+1(
+#146
+0(
+#147
+1(
+#148
+0(
+#149
+1(
+#150
+0(

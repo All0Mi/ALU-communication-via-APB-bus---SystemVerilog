@@ -1,0 +1,935 @@
+$date
+	Wed Jan 24 01:54:13 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testbench $end
+$var wire 1 ! o_PSLVERR $end
+$var wire 1 " o_PREADY $end
+$var wire 8 # o_PRDATA [7:0] $end
+$var wire 1 $ i_PWRITE $end
+$var wire 8 % i_PWDATA [7:0] $end
+$var wire 3 & i_PSEL [2:0] $end
+$var wire 1 ' i_PRESETn $end
+$var wire 1 ( i_PENABLE $end
+$var wire 2 ) i_PADDR [1:0] $end
+$var parameter 32 * ADDR_WIDTH $end
+$var parameter 32 + DATA_WIDTH $end
+$var parameter 32 , MEMORY_WIDTH $end
+$var parameter 32 - SEL_WIDTH $end
+$var reg 1 . i_PCLK $end
+$scope module cnt $end
+$var wire 1 . CLK $end
+$var wire 14 / o_data_r [13:0] $end
+$var wire 1 $ o_PWRITE $end
+$var wire 8 0 o_PWDATA [7:0] $end
+$var wire 3 1 o_PSEL [2:0] $end
+$var wire 1 ( o_PENABLE $end
+$var wire 2 2 o_PADDR [1:0] $end
+$var wire 1 ! i_PSLVERR $end
+$var wire 1 " i_PREADY $end
+$var wire 8 3 i_PRDATA [7:0] $end
+$var wire 1 4 busy $end
+$var wire 1 5 P_data_valid $end
+$var wire 8 6 P_data_r [7:0] $end
+$var parameter 32 7 ADDR_WIDTH $end
+$var parameter 3 8 ANSW_STATE $end
+$var parameter 32 9 DATA_WIDTH $end
+$var parameter 3 : DUMP_STATE $end
+$var parameter 3 ; END_STATE $end
+$var parameter 3 < HOLD_STATE $end
+$var parameter 32 = MEMORY_WIDTH $end
+$var parameter 3 > PUSH_STATE $end
+$var parameter 3 ? READ_STATE $end
+$var parameter 3 @ SAVE_STATE $end
+$var parameter 32 A SEL_WIDTH $end
+$var parameter 3 B WAIT_STATE $end
+$var reg 2 C P_addr [1:0] $end
+$var reg 8 D P_data_w [7:0] $end
+$var reg 1 E P_enable $end
+$var reg 2 F P_slave_idx [1:0] $end
+$var reg 1 G P_wr $end
+$var reg 1 H i_PRESETn $end
+$var reg 14 I i_data_w [13:0] $end
+$var reg 1 J i_dump $end
+$var reg 1 K i_en $end
+$var reg 1 L i_wr $end
+$var reg 2 M mem_addr [1:0] $end
+$var reg 1 N next $end
+$var reg 1 ' o_PRESETn $end
+$var reg 1 O s_reset $end
+$var reg 1 P s_save $end
+$var reg 3 Q state [2:0] $end
+$var reg 2 R write_addr [1:0] $end
+$scope module master $end
+$var wire 1 . i_PCLK $end
+$var wire 1 H i_PRESETn $end
+$var wire 2 S i_addr [1:0] $end
+$var wire 8 T i_data_w [7:0] $end
+$var wire 1 E i_enable $end
+$var wire 2 U i_slave_idx [1:0] $end
+$var wire 1 G i_wr $end
+$var wire 1 ! i_PSLVERR $end
+$var wire 1 " i_PREADY $end
+$var wire 8 V i_PRDATA [7:0] $end
+$var parameter 2 W ACCESS_STATE $end
+$var parameter 32 X ADDR_WIDTH $end
+$var parameter 32 Y DATA_WIDTH $end
+$var parameter 2 Z IDLE_STATE $end
+$var parameter 32 [ SEL_WIDTH $end
+$var parameter 2 \ SETUP_STATE $end
+$var reg 2 ] o_PADDR [1:0] $end
+$var reg 1 ( o_PENABLE $end
+$var reg 3 ^ o_PSEL [2:0] $end
+$var reg 8 _ o_PWDATA [7:0] $end
+$var reg 1 $ o_PWRITE $end
+$var reg 1 4 o_busy $end
+$var reg 8 ` o_data_r [7:0] $end
+$var reg 1 5 o_data_valid $end
+$var reg 2 a state [1:0] $end
+$upscope $end
+$scope module memory $end
+$var wire 2 b i_addr [1:0] $end
+$var wire 1 . i_clk $end
+$var wire 14 c i_data_w [13:0] $end
+$var wire 1 J i_dump $end
+$var wire 1 K i_en $end
+$var wire 1 L i_wr $end
+$var wire 2 d i_write_addr [1:0] $end
+$var parameter 32 e ADDR_WIDTH $end
+$var parameter 32 f DATA_WIDTH $end
+$var parameter 104 g MEMORY_DUMP_FILE $end
+$var parameter 64 h MEMORY_FILE $end
+$var reg 14 i o_data_r [13:0] $end
+$upscope $end
+$upscope $end
+$scope module slave $end
+$var wire 2 j i_PADDR [1:0] $end
+$var wire 1 . i_PCLK $end
+$var wire 1 ( i_PENABLE $end
+$var wire 1 ' i_PRESETn $end
+$var wire 3 k i_PSEL [2:0] $end
+$var wire 8 l i_PWDATA [7:0] $end
+$var wire 1 $ i_PWRITE $end
+$var wire 4 m s_result [3:0] $end
+$var parameter 32 n ADDR_WIDTH $end
+$var parameter 32 o DATA_WIDTH $end
+$var parameter 32 p SEL_BIT $end
+$var parameter 32 q SEL_WIDTH $end
+$var reg 8 r o_PRDATA [7:0] $end
+$var reg 1 " o_PREADY $end
+$var reg 1 ! o_PSLVERR $end
+$var reg 2 s s_PADDR [1:0] $end
+$var reg 8 t s_PWDATA [7:0] $end
+$var reg 1 u s_pslverr $end
+$scope module slave $end
+$var wire 4 v i_argA [3:0] $end
+$var wire 4 w i_argB [3:0] $end
+$var wire 1 . i_clk $end
+$var wire 2 x i_oper [1:0] $end
+$var wire 1 y i_rsn $end
+$var wire 4 z out_shift [3:0] $end
+$var wire 4 { out_mux [3:0] $end
+$var wire 4 | out_conversion [3:0] $end
+$var wire 4 } out_compare [3:0] $end
+$var wire 4 ~ out_bit_change [3:0] $end
+$var wire 4 !" o_status [3:0] $end
+$var wire 4 "" o_result [3:0] $end
+$var wire 1 #" err_left_shift $end
+$var wire 1 $" err_conversion $end
+$var wire 1 %" err_bit_change $end
+$var parameter 32 &" M $end
+$var parameter 32 '" N $end
+$var reg 4 (" info [3:0] $end
+$var integer 32 )" count [31:0] $end
+$var integer 32 *" i [31:0] $end
+$scope module bit_change $end
+$var wire 4 +" A [3:0] $end
+$var wire 4 ," B [3:0] $end
+$var parameter 32 -" N $end
+$var reg 1 %" error $end
+$var reg 4 ." result [3:0] $end
+$upscope $end
+$scope module compare $end
+$var wire 4 /" A [3:0] $end
+$var wire 4 0" B [3:0] $end
+$var parameter 32 1" N $end
+$var reg 4 2" result [3:0] $end
+$upscope $end
+$scope module conversion $end
+$var wire 4 3" u2_number [3:0] $end
+$var parameter 32 4" N $end
+$var reg 1 $" error $end
+$var reg 4 5" sm_number [3:0] $end
+$upscope $end
+$scope module mux $end
+$var wire 4 6" in0 [3:0] $end
+$var wire 4 7" in2 [3:0] $end
+$var wire 4 8" in3 [3:0] $end
+$var wire 2 9" sel [1:0] $end
+$var wire 4 :" in1 [3:0] $end
+$var parameter 32 ;" N $end
+$var reg 4 <" out [3:0] $end
+$upscope $end
+$scope module register $end
+$var wire 1 . clk $end
+$var wire 4 =" in [3:0] $end
+$var wire 1 y reset $end
+$var parameter 32 >" N $end
+$var reg 4 ?" out [3:0] $end
+$upscope $end
+$scope module shift $end
+$var wire 4 @" A [3:0] $end
+$var wire 4 A" B [3:0] $end
+$var parameter 32 B" N $end
+$var reg 1 #" error $end
+$var reg 4 C" result [3:0] $end
+$var reg 4 D" shifted_A [3:0] $end
+$upscope $end
+$scope module status_register $end
+$var wire 1 . clk $end
+$var wire 4 E" in [3:0] $end
+$var wire 1 y reset $end
+$var parameter 32 F" N $end
+$var reg 4 G" out [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 F"
+b100 B"
+b100 >"
+b100 ;"
+b100 4"
+b100 1"
+b100 -"
+b10 '"
+b100 &"
+b11 q
+b1 p
+b1000 o
+b10 n
+b110110101100101011011010010111001100100011000010111010001100001 h
+b1101101011001010110110101011111011001000111010101101101011100000010111001100100011000010111010001100001 g
+b1110 f
+b10 e
+b1 \
+b11 [
+b0 Z
+b1000 Y
+b10 X
+b10 W
+b11 B
+b11 A
+b10 @
+b0 ?
+b1 >
+b1110 =
+b111 <
+b101 ;
+b110 :
+b1000 9
+b100 8
+b10 7
+b11 -
+b1110 ,
+b1000 +
+b10 *
+$end
+#0
+$dumpvars
+bx G"
+bx1x E"
+bx D"
+bx C"
+bx A"
+bx @"
+bx ?"
+bx ="
+bx <"
+bx :"
+bx 9"
+b0 8"
+bx 7"
+bx 6"
+bx 5"
+bx 3"
+b0 2"
+bx 0"
+bx /"
+bx ."
+bx ,"
+bx +"
+b100 *"
+b0 )"
+bx1x ("
+0%"
+x$"
+x#"
+bx ""
+bx !"
+bx ~
+b0 }
+bx |
+bx {
+bx z
+zy
+bx x
+bx w
+bx v
+xu
+bx t
+bx s
+bx r
+bx m
+bx l
+bx k
+bx j
+bx i
+b0 d
+bx c
+b0 b
+bx a
+bx `
+bx _
+bx ^
+bx ]
+bx V
+bx U
+bx T
+bx S
+b0 R
+b0 Q
+0P
+1O
+1N
+b0 M
+0L
+1K
+0J
+bx I
+xH
+xG
+bx F
+xE
+bx D
+bx C
+bx 6
+x5
+x4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+0.
+bx )
+x(
+x'
+bx &
+bx %
+x$
+bx #
+x"
+x!
+$end
+#1000
+b0 a
+b1101011 /
+b1101011 i
+b1 Q
+bx1x !"
+bx1x G"
+0!
+b0 #
+b0 3
+b0 V
+b0 r
+0"
+0u
+1.
+#2000
+0.
+#3000
+04
+05
+0(
+b0 &
+b0 1
+b0 ^
+b0 k
+b11 Q
+1E
+1H
+1'
+b0 F
+b0 U
+b0 C
+b0 S
+b11010 D
+b11010 T
+1P
+1G
+0K
+1.
+#4000
+0.
+#5000
+b1 a
+14
+1.
+#6000
+0.
+#7000
+b10 a
+b11010 %
+b11010 0
+b11010 _
+b11010 l
+1$
+b0 )
+b0 2
+b0 ]
+b0 j
+b1 &
+b1 1
+b1 ^
+b1 k
+1.
+#8000
+0.
+#9000
+1(
+1.
+#10000
+0.
+#11000
+b0x10 ("
+b0x10 E"
+b100 *"
+b1110 {
+b1110 <"
+b1110 ="
+0$"
+b1110 |
+b1110 5"
+b1110 6"
+b1010 ~
+b1010 ."
+b1010 7"
+b1 }
+b1 2"
+b1 8"
+b100 D"
+0#"
+b1100 z
+b1100 :"
+b1100 C"
+b1010 v
+b1010 +"
+b1010 /"
+b1010 3"
+b1010 @"
+b1 w
+b1 ,"
+b1 0"
+b1 A"
+1"
+b11010 t
+b0 s
+b0 x
+b0 9"
+1.
+#12000
+0.
+#13000
+04
+b0 6
+b0 `
+b0 %
+b0 0
+b0 _
+b0 l
+0$
+0(
+b0 &
+b0 1
+b0 ^
+b0 k
+0"
+b0 ("
+b0 E"
+b11 )"
+b100 *"
+b0 a
+b100 Q
+0H
+0'
+b0 D
+b0 T
+0G
+b1110 m
+b1110 ""
+b1110 ?"
+b0x10 !"
+b0x10 G"
+0E
+1.
+#14000
+0.
+#15000
+b0 !"
+b0 G"
+b10 Q
+1E
+1H
+1'
+1.
+#16000
+0.
+#17000
+b1 a
+14
+1.
+#18000
+0.
+#19000
+b10 a
+b1 &
+b1 1
+b1 ^
+b1 k
+1.
+#20000
+0.
+#21000
+1(
+1.
+#22000
+0.
+#23000
+b1110 #
+b1110 3
+b1110 V
+b1110 r
+1"
+1.
+#24000
+0.
+#25000
+04
+0(
+b0 &
+b0 1
+b0 ^
+b0 k
+b0 #
+b0 3
+b0 V
+b0 r
+0"
+b0 a
+05
+b0 6
+b0 `
+b101 Q
+1K
+b1110 I
+b1110 c
+1L
+0E
+0H
+0'
+1.
+#26000
+0.
+#27000
+1J
+0K
+0L
+b1 R
+b1 d
+b1 M
+b1 b
+b0 Q
+1.
+#28000
+0.
+#29000
+b1 Q
+0J
+1K
+1.
+#30000
+0.
+#31000
+b11 Q
+1E
+1H
+1'
+b11010 D
+b11010 T
+1G
+0K
+b1100101111011 /
+b1100101111011 i
+1.
+#32000
+0.
+#33000
+b1 a
+14
+1.
+#34000
+0.
+#35000
+b10 a
+b11010 %
+b11010 0
+b11010 _
+b11010 l
+1$
+b1 &
+b1 1
+b1 ^
+b1 k
+1.
+#36000
+0.
+#37000
+1(
+1.
+#38000
+0.
+#39000
+1"
+1.
+#40000
+0.
+#41000
+04
+b0 %
+b0 0
+b0 _
+b0 l
+0$
+0(
+b0 &
+b0 1
+b0 ^
+b0 k
+0"
+b0 a
+b100 Q
+0H
+0'
+b0 D
+b0 T
+0G
+0E
+1.
+#42000
+0.
+#43000
+b10 Q
+1E
+1H
+1'
+1.
+#44000
+0.
+#45000
+b1 a
+14
+1.
+#46000
+0.
+#47000
+b10 a
+b1 &
+b1 1
+b1 ^
+b1 k
+1.
+#48000
+0.
+#49000
+1(
+1.
+#50000
+0.
+#51000
+b1110 #
+b1110 3
+b1110 V
+b1110 r
+1"
+1.
+#52000
+0.
+#53000
+04
+0(
+b0 &
+b0 1
+b0 ^
+b0 k
+b0 #
+b0 3
+b0 V
+b0 r
+0"
+b0 a
+05
+b0 6
+b0 `
+b101 Q
+1K
+1L
+0E
+0H
+0'
+1.
+#54000
+0.
+#55000
+1J
+0K
+0L
+b10 R
+b10 d
+b10 M
+b10 b
+b0 Q
+1.
+#56000
+0.
+#57000
+b1 Q
+0J
+1K
+1.
+#58000
+0.
+#59000
+b11 Q
+1E
+1H
+1'
+b1 F
+b1 U
+b10 C
+b10 S
+b1011110 D
+b1011110 T
+1G
+0K
+b1000001101011 /
+b1000001101011 i
+1.
+#60000
+0.
+#61000
+b1 a
+14
+1.
+#62000
+0.
+#63000
+b10 a
+b1011110 %
+b1011110 0
+b1011110 _
+b1011110 l
+1$
+b10 )
+b10 2
+b10 ]
+b10 j
+b10 &
+b10 1
+b10 ^
+b10 k
+1.
+#64000
+0.
+#65000
+1(
+1.
+#66000
+0.
+#67000
+1.
+#68000
+0.
+#69000
+1.
+#70000
+0.
+#71000
+1.
+#72000
+0.
+#73000
+1.
+#74000
+0.
+#75000
+1.
+#76000
+0.
+#77000
+1.
+#78000
+0.
+#79000
+1.
+#80000
+0.
+#81000
+1.
+#82000
+0.
+#83000
+1.
+#84000
+0.
+#85000
+1.
+#86000
+0.
+#87000
+1.
+#88000
+0.
+#89000
+1.
+#90000
+0.
+#91000
+1.
+#92000
+0.
+#93000
+1.
+#94000
+0.
+#95000
+1.
+#96000
+0.
+#97000
+1.
+#98000
+0.
+#99000
+1.
+#100000
+0.
+#101000
+1.
+#102000
+0.
+#103000
+1.
+#104000
+0.
+#105000
+1.
+#106000
+0.
+#107000
+1.
+#108000
+0.
+#109000
+1.
+#110000
+0.
+#111000
+1.
+#112000
+0.
+#113000
+1.
+#114000
+0.
+#115000
+1.
+#116000
+0.
+#117000
+1.
+#118000
+0.
+#119000
+1.
+#120000
+0.
+#121000
+1.
+#122000
+0.
+#123000
+1.
+#124000
+0.
+#125000
+1.
+#126000
+0.
+#127000
+1.
+#128000
+0.
+#129000
+1.
+#130000
+0.
+#131000
+1.
+#132000
+0.
+#133000
+1.
+#134000
+0.
+#135000
+1.
+#136000
+0.
+#137000
+1.
+#138000
+0.
+#139000
+1.
+#140000
+0.
+#141000
+1.
+#142000
+0.
+#143000
+1.
+#144000
+0.
+#145000
+1.
+#146000
+0.
+#147000
+1.
+#148000
+0.
+#149000
+1.
+#150000
+0.
