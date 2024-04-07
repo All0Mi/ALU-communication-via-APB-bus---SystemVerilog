@@ -1,0 +1,61 @@
+$date
+	Fri Dec  1 11:31:44 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 8 ! result [7:0] $end
+$var reg 8 " a [7:0] $end
+$var reg 8 # b [7:0] $end
+$scope module cmp $end
+$var wire 8 $ A [7:0] $end
+$var wire 8 % B [7:0] $end
+$var reg 8 & result [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 &
+b1000 %
+b110 $
+b1000 #
+b110 "
+b1 !
+$end
+#10
+b0 !
+b0 &
+b110 #
+b110 %
+b1000 "
+b1000 $
+#20
+b1 !
+b1 &
+b1000 #
+b1000 %
+b11111010 "
+b11111010 $
+#30
+b0 !
+b0 &
+b11111000 #
+b11111000 %
+b110 "
+b110 $
+#40
+b11111010 "
+b11111010 $
+#50
+b1 !
+b1 &
+b11111010 #
+b11111010 %
+b11111000 "
+b11111000 $
+#60

@@ -1,0 +1,47 @@
+$date
+	Fri Dec  1 11:31:38 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 8 ! result [7:0] $end
+$var wire 1 " error $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$scope module bch $end
+$var wire 8 % A [7:0] $end
+$var wire 8 & B [7:0] $end
+$var reg 1 " error $end
+$var reg 8 ' result [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10101011 '
+b0 &
+b10101010 %
+b0 $
+b10101010 #
+0"
+b10101011 !
+$end
+#10
+b10101110 !
+b10101110 '
+b10 $
+b10 &
+#20
+b10101010 !
+b10101010 '
+1"
+b11111110 $
+b11111110 &
+#30
+b1001 $
+b1001 &
+#40

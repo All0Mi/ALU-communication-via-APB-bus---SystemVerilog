@@ -1,0 +1,23 @@
+# Wczytanie pliku modelu
+    read_verilog -sv ./modules/%PARAM%.sv
+
+# Utworzenie kopi modulu z inna nazwa
+#   copy left_shift left_shift_rtl
+
+# Ustawienie hierarchii projektu na nowy modul 
+#    hierarchy -top left_shift_rtl
+
+# Synteza logiczna
+    synth
+
+# Mapowanie na bramki
+#    abc -g AND,OR,XOR
+
+# Optymalizacja po mapowaniu
+    opt_clean
+
+# Zapis wyniku symulacji
+    write_verilog -noattr ./synth/%PARAM%_rtl.sv
+    
+# Wypisanie statystyki uzytych bramek
+    stat

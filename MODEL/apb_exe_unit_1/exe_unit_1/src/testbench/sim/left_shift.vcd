@@ -1,0 +1,47 @@
+$date
+	Fri Dec  1 11:31:49 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 8 ! result [7:0] $end
+$var wire 1 " error $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$scope module uut $end
+$var wire 8 % A [7:0] $end
+$var wire 8 & B [7:0] $end
+$var reg 1 " error $end
+$var reg 8 ' result [7:0] $end
+$var reg 8 ( shifted_A [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1101000 (
+b1101000 '
+b10 &
+b11010 %
+b10 $
+b11010 #
+0"
+b1101000 !
+$end
+#10
+b10011000 (
+b10011000 !
+b10011000 '
+b11100110 #
+b11100110 %
+#20
+1"
+b0 !
+b0 '
+b11111101 $
+b11111101 &
+#30
